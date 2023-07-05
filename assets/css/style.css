@@ -8,6 +8,7 @@
 
 body {
     min-width: 1400px;
+    position: relative;
 }
 
 :root {
@@ -73,10 +74,6 @@ body {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-    color: var(--boo-text_light);
-}
 
 .head_site, .foot_site {
     color: var(--boo-text_light);
@@ -92,6 +89,8 @@ a {
     width: calc(100% / 12 * 5);
 }
 
+
+
 /* #endregion Common */
 
 
@@ -99,8 +98,15 @@ a {
 
 .head_site {
     background-color: var(--boo-principal);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
 }
 
+.head_site a {
+    text-decoration: none;
+    color: var(--boo-text_light);
+}
 
 
 .masthead {
@@ -122,15 +128,36 @@ a {
 
 /* #region Main */
 
+.main_site {
+    position: relative;
+    top: 3rem;
+}
+
 .card {
     width: calc(100% / 12 * 4);
-    
+    position: relative;
 }
 
 .main_site .row {
     padding-top: 3rem;
 }
 
+.card .to_hide:hover {
+    display: none;
+}
+
+.to_hide {
+    position: absolute;
+}
+
+.main_site a {
+    color: var(--boo-dark);
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+}
 
 
 /* #endregion Main */
