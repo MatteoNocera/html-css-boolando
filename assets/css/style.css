@@ -26,7 +26,6 @@ body {
 
 .debug .head_site{
     height: 70px;
-    background-color: var(--boo-principal);
 }
 
 .debug .gender, .debug .logo, .debug .masthead{
@@ -74,17 +73,47 @@ body {
     display: flex;
 }
 
-/* #endregion Common */
+a {
+    text-decoration: none;
+    color: var(--boo-text_light);
+}
 
+.head_site, .foot_site {
+    color: var(--boo-text_light);
+    padding: 1rem 0;
+}
 
-/* #region Header */
+.masthead a, .gender a {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
 
 .gender, .masthead {
     width: calc(100% / 12 * 5);
 }
 
+/* #endregion Common */
+
+
+/* #region Header */
+
+.head_site {
+    background-color: var(--boo-principal);
+}
+
+
+
+.masthead {
+    text-align: end;
+}
+
+
 .logo {
     width: calc(100% / 12 * 2);
+}
+
+.logo img {
+    height: 2rem;
 }
 
 
