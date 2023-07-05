@@ -89,6 +89,12 @@ body {
     width: calc(100% / 12 * 5);
 }
 
+.text_detail {
+    padding: 0.5rem 0.7rem;
+    color: var(--boo-text_light);
+    font-weight: bold;
+}
+
 
 
 /* #endregion Common */
@@ -157,6 +163,48 @@ body {
 
 .card img {
     width: 100%;
+}
+
+.new_price {
+    color: var(--boo-discount);
+    font-weight: bold;
+}
+
+.old_price {
+    text-decoration: line-through;
+}
+
+.photos {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    background-color: var(--boo-white);
+    padding: 1rem;
+}
+
+.heart:hover {
+    color: var(--boo-discount);
+}
+
+.details {
+    position: absolute;
+    bottom: 7rem;
+    left: 0;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.percent {    
+    background-color: var(--boo-discount);
+}
+
+.eco {
+    background-color: var(--boo-sosteni);
 }
 
 
