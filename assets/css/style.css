@@ -24,7 +24,7 @@ body {
 
 /* #region Debug */
 
-.debug header {
+.debug .head_site{
     height: 70px;
     background-color: var(--boo-principal);
 }
@@ -41,6 +41,16 @@ body {
     border: 1px solid black;
 }
 
+.debug .foot_site {
+    height: 70px;
+    background-color: var(--boo-principal);
+}
+
+.debug .bool_srl, .debug .find_it {
+    background-color: blue;
+    height: 2rem;
+    border: 1px solid black;
+}
 
 
 /* #endregion Debug */
@@ -60,7 +70,7 @@ body {
     gap: 2rem;
 }
 
-.head_site {
+.head_site, .foot_site {
     display: flex;
 }
 
@@ -95,4 +105,13 @@ body {
 
 
 /* #endregion Main */
+
+/* #region Footer */
+
+.bool_srl, .find_it {
+    width: calc(100% / 12 * 6);
+}
+
+
+/* #endregion Footer */
 
