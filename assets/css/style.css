@@ -35,6 +35,12 @@ body {
     border: 1px solid black;
 }
 
+.debug .card {
+    background-color: var(--boo-discount);
+    height: 630px;
+    border: 1px solid black;
+}
+
 
 
 /* #endregion Debug */
@@ -51,6 +57,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .head_site {
@@ -73,4 +80,19 @@ body {
 
 
 /* #endregion Header */
+
+/* #region Main */
+
+.card {
+    width: calc(100% / 12 * 4);
+    
+}
+
+.main_site .row {
+    padding-top: 3rem;
+}
+
+
+
+/* #endregion Main */
 
